@@ -1,0 +1,34 @@
+################# windows
+python -m pip install --upgrade pip
+
+F:
+pip install -r F:\workspace\tmp\flask\z_api\requirements.txt
+
+################# linux
+sudo pip3 install -r /run/media/ruan/data2/workspace/tmp/flask/z_api/requirements.txt
+
+
+
+######### all
+sudo -H pip3 install --ignore-installed PyYAML
+
+sudo pip3 install google-cloud
+sudo pip3 install google-auth
+
+sudo pip3 install --upgrade requests
+sudo pip3 install --upgrade urllib3
+
+https://unix.stackexchange.com/questions/410579/change-the-python3-default-version-in-ubuntu
+
+
+
+##############################################
+linux install 
+sudo yum install gcc openssl-devel bzip2-devel libffi-devel -y
+sudo dnf install python3-devel 
+https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory
+
+sudo pip3 install google-cloud-firestore
+sudo pip3 install backports-datetime-fromisoformat
+sudo pip3 install wheel
+sudo pip3 install fireo

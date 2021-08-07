@@ -1,0 +1,60 @@
+{
+    "paths": {
+      "/author/1/": {
+        "get": {
+          "description": "Get a list of authors",
+          "security": [
+            {
+              "ApiKeyAuth": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/AuthorSchemaShort"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "title": "Swagger User",
+      "version": "1.0.0"
+    },
+    "openapi": "3.0.2",
+    "components": {
+      "schemas": {
+        "AuthorSchemaShort": {
+          "type": "object",
+          "properties": {
+            "first_name": {
+              "type": "string"
+            },
+            "id": {
+              "type": "number",
+              "readOnly": true
+            },
+            "last_name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "first_name",
+            "last_name"
+          ]
+        }
+      },
+      "securitySchemes": {
+        "ApiKeyAuth": {
+          "type": "apiKey",
+          "in": "header",
+          "name": "X-API-Key"
+        }
+      }
+    }
+  }
